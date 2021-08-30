@@ -1,0 +1,11 @@
+First_number: int = int(input("Choose a number: "))
+Second_number: int = int(input("Choose another number: "))
+
+number_one = str(First_number)
+number_two = str(Second_number)
+print("Left-hand side: " + str(number_one))
+print("Right-hand side: " + str(number_two))
+print(int(number_one) ** int(number_two))
+print(int(number_one) / int(number_two))
+print(int(number_one) // int(number_two))
+print(int(number_one) % int(number_two))

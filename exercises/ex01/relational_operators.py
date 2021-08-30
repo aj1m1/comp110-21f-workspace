@@ -1,0 +1,11 @@
+First_number: int = int(input("Choose a number: "))
+second_number: int = int(input("Choose another number: "))
+First = int(First_number) > int(second_number)
+Second = int(First_number) >= int(second_number)
+Third = int(First_number) == int(second_number)
+Fourth = int(First_number) != int(second_number)
+
+print(First)
+print(Second)
+print(Third)
+print(Fourth)
