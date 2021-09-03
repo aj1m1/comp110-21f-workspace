@@ -1,4 +1,4 @@
-"""A program to practice variables and hype myself"""
+"""A program to practice variables and hype myself."""
 
 __author__ = "730410140"
 
