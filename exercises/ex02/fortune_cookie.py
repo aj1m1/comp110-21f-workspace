@@ -19,15 +19,10 @@ if fortune_number == 4:
     print("You Have amazing professors and TA's who will ensure your success.")
 else:
     if fortune_number == 3:
-     print("A lot of great opportunities are coming your way, don't be scared to make sacrifices.")
+        print("A lot of great opportunities are coming your way, don't be scared to make sacrifices.")
     else:
         if fortune_number == 2:
-         print("Stay focused cos your are a victor.")
+            print("Stay focused cos your are a victor.")
         else:
-         print("You will buy a car this year.")
-
-print("Now go and spread positive vibes!")
-
-
-
-
+            print("You will buy a car this year.")
+print("Now, go spread positive vibes!")          
