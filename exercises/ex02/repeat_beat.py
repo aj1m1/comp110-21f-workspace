@@ -12,4 +12,4 @@ bet: str = ""
 while Number_of_times > 0:
     bet = bet + " " + beat
     Number_of_times = Number_of_times - 1
-print(bet)
+    print(bet,)

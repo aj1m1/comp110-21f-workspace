@@ -1,6 +1,6 @@
 """Finding duplicate letters in a word."""
 
-__author__ = "123456789"
+__author__ = "730410140"
 
 user_word: str = input('Enter a word: ')
 dup: bool = False

@@ -11,5 +11,6 @@ if depth <= 0:
 Tree: str = ""
 while depth > 0:
     Tree = Tree + TREE
-    print(Tree)
+
     depth = depth - 1
+    print(Tree)

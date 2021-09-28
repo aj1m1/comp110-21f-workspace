@@ -1,4 +1,3 @@
-
 """Carolina Trivia game."""
 
 __author__ = "730410140"
@@ -7,9 +6,11 @@ points: int
 player: str 
 love_emoji: str = '\U0001F60D'
 sad_emoji: str = '\U0001F613'
+count: int
 total_number_of_questions: int = 5
 
-count: int
+
+
 
 def main() -> None:
     """Entry point of game."""
@@ -23,6 +24,7 @@ def main() -> None:
     final_score(points)
     print("Goodbye")
     
+
 def greet() -> None:
     """Introduction to game."""
     print("Welcome to Carolina Trivia Game.")
@@ -111,14 +113,13 @@ def game_two(points: int) -> int:
     return points
 
 
-def game_off(points: int) -> float:
+def game_off(points: int) -> int:
     """Get off the game."""
     print(f'Thank you for Playing this game, you attempted" {points}  "questions correctly!')
     mark = (points / total_number_of_questions) * 100
     print(f'Marks obtained: {mark}')
-
     if mark <= 50:
-            print(f'You scored {mark} and you need to boost your Tar Heel Spirit')
+        print(f'You scored {mark} and you need to boost your Tar Heel Spirit')
     else:
         if mark <= 80:
             print(f'Your tar Heel streek was great today, you scored {mark} Carolina is proud of you')
@@ -128,7 +129,8 @@ def game_off(points: int) -> float:
     return points
 
 
-def run_game(points)->float:
+def run_game(points: int) -> int:
+    """How game runs."""
     count = 0
 
     while True:
@@ -144,14 +146,16 @@ def run_game(points)->float:
             else:
                 student_response = input("Do you want to Exit?, yes or no:")
                 if student_response == "yes":
-                    return game_off(points)
-        count += 1
+                    
+                    count += 1
+        return game_off(points)
     
-def final_score(points) -> float:
-    total_score = (points / total_number_of_questions) * 100
+
+def final_score(points: int) -> float:
+    """Scores calculation."""
+    total_score = (points / (count * 5)) * 100
     return total_score
 
 
 if __name__ == "__main__":
     main()
-
