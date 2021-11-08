@@ -89,6 +89,7 @@ def concat(tabu: dict[str, list[str]], tabu2: dict[str, list[str]]) -> dict[str,
 
 
 def count(tab_major: dict[str, list[str]]) -> dict[str, int]:
+    """A helper function to be used to count the number of string occurrence."""
     xs = {}
     for i in tab_major:
         if i not in xs:
@@ -97,3 +98,5 @@ def count(tab_major: dict[str, list[str]]) -> dict[str, int]:
             xs[i] += 1
 
     return xs
+
+
