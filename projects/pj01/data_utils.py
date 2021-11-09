@@ -98,5 +98,3 @@ def count(tab_major: dict[str, list[str]]) -> dict[str, int]:
             xs[i] += 1
 
     return xs
-
-
